@@ -15,22 +15,46 @@ subtitle = ""
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 
 [[feature]]
+  icon = "globe"
+  icon_pack = "fas"
+  name = "GIS"
+  description = "100%"
+  progress = "100"
+
+[[feature]]
+  icon = "map"
+  icon_pack = "fas"
+  name = "Cartography"
+  description = "100%"
+  progress = "100"
+
+[[feature]]
   icon = "r-project"
   icon_pack = "fab"
   name = "R"
   description = "90%"
-  
+  progress = "90"
+
 [[feature]]
-  icon = "chart-line"
-  icon_pack = "fas"
-  name = "Statistics"
-  description = "100%"  
-  
+  icon = "python"
+  icon_pack = "fab"
+  name = "Python"
+  description = "80%"
+  progress = "80"
+
 [[feature]]
-  icon = "camera-retro"
+  icon = "markdown"
+  icon_pack = "fab"
+  name = "Markdown"
+  description = "70%"  
+  progress = "70"
+
+[[feature]]
+  icon = "code"
   icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  name = "HTML/CSS/JS"
+  description = "70%"
+  progress = "70"
 
 # Uncomment to use emoji icons.
 # [[feature]]
