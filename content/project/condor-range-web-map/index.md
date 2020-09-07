@@ -6,7 +6,7 @@ summary: "This web map shows off California condor ranges and the park units tha
 authors: [Joshua Flickinger]
 tags: [nps, web map, NPMap Builder, wildlife, condors]
 categories: [web map]
-date: 2020-05-30T16:13:19-07:00
+date: 2019-04-11T13:40:19-07:00
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
