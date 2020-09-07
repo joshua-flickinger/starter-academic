@@ -28,7 +28,7 @@ image:
 #    icon: globe-americas
 
 url_code: ""
-url_pdf: "backcountry-map.pdf"
+url_pdf: ""
 url_slides: ""
 url_video: ""
 
@@ -39,6 +39,7 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 slides: ""
 ---
+{{% staticref "files/backcountry-map.pdf" "newtab" %}}Checkout the full map.{{% /staticref %}}
 
 I created this map for the Sequoia and Kings Canyon National Parks Lodgepole Visitor Center.  The map is intended to show backpackers where they can access trails into the 'backcountry' and help them plan overnight wilderness trips.
 
