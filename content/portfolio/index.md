@@ -5,7 +5,7 @@ headless = false  # This file represents a page section.
 active = true  # Activate this widget? true/false
 
 title = "Portfolio"
-subtitle = ""
+subtitle = "A collection of my professional works"
 
 [content]
   # Page type to display. E.g. project.
