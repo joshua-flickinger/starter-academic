@@ -42,4 +42,4 @@ slides: ""
 
 I created this map for the Sequoia and Kings Canyon National Parks Lodgepole Visitor Center.  The map is intended to show backpackers where they can access trails into the 'backcountry' and help them plan overnight wilderness trips.
 
-The map was created in ArcGIS Pro, using publicly available data from the NPS and USFS.
+The map was created in ArcGIS Pro 2.4, using publicly available data from the NPS and USFS.  The map was also submitted to the 2020 ESRI User Conference virtual map gallery.  You can check it out [here](https://www.esri.com/en-us/about/events/uc/esri-uc-map-gallery#/map-detail/5ef53a4bf3b616cb3401e9ac).
