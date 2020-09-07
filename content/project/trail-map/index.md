@@ -4,7 +4,7 @@
 title: "Backcountry Map"
 summary: "This map for print shows trails and access points in Sequoia and Kings Canyon National Parks."
 authors: [Joshua Flickinger]
-tags: [NPS, map, ArcGIS Pro, ESRI]
+tags: [NPS, map, ArcGIS Pro, ESRI, backcountry, trails]
 categories: [map]
 date: 2020-05-31T09:48:04-07:00
 
