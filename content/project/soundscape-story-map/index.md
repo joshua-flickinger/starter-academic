@@ -4,7 +4,7 @@
 title: "Soundscape Story Map"
 summary: "This story map highlights sights and sounds of the Sierra Nevada along the elevation gradient of two well known national parks."
 authors: [Joshua Flickinger]
-tags: [nps, ESRI, ArcGIS Online, story map]
+tags: [nps, ESRI, ArcGIS Online, story map, soundscape]
 categories: [story map]
 date: 2020-05-25T21:53:05-07:00
 
