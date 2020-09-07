@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 1  # Order that this section will appear.
 
 title = "Portfolio"
-subtitle = "A collection of my professional works"
+subtitle = "A collection of my professional works.  Projects on this page have been reviewed by colleagues and represent more refined products."
 
 [content]
   # Page type to display. E.g. project.
