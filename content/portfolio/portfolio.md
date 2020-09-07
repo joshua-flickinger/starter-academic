@@ -26,12 +26,12 @@ subtitle = "A collection of my professional works"
     tag = "*"
   
   [[content.filter_button]]
-    name = "Deep Learning"
-    tag = "Deep Learning"
+    name = "Soundscapes"
+    tag = "soundscape"
   
   [[content.filter_button]]
-    name = "Other"
-    tag = "Demo"
+    name = "Forest"
+    tag = "forest"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
