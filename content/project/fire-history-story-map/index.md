@@ -1,12 +1,12 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Soundscape Story Map"
-summary: "This story map highlights sights and sounds of the Sierra Nevada along the elevation gradient of two well known national parks."
+title: "Fire History Story Map"
+summary: "This story map explains the history of fire management at Sequoia and Kings Canyon National Parks."
 authors: [Joshua Flickinger]
-tags: [nps, ESRI, ArcGIS Online, story map]
+tags: [nps, ESRI, ArcGIS Online, story map, fire history, fire]
 categories: [story map]
-date: 2020-05-25T21:53:05-07:00
+date: 2020-09-07T03:40:00
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
