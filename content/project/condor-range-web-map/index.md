@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Condors in the National Parks Web Map"
+title: "Condors Web Map"
 summary: "This web map shows off California condor ranges and the park units that are involved in condor recovery."
 authors: [Joshua Flickinger]
 tags: [nps, web map, NPMap Builder, wildlife, condors]
