@@ -22,17 +22,19 @@ bio: Joshua Flickinger is a cartographer that works for the National Park Servic
 
 interests:
 - Cartography
-- Data Visualization
+- Data visualization
 - GIS
+- Landscape ecology
+- Landuse change
 
 education:
   courses:
   - course: M.S. in Natural Resource Management
-    institution: University of Michigan School for Environment and Sustainability
+    institution: University of Michigan, School for Environment and Sustainability
     link: https://seas.umich.edu/
     year: 2017
   - course: B.S. in Biosystems Engineering
-    institution: Virginia Tech
+    institution: Virginia Tech, College of Engineering
     year: 2010
 
 # Social/Academic Networking
@@ -62,4 +64,4 @@ user_groups:
 - Visitors
 ---
 
-Joshua Flickinger is a cartographer and data manager for Sequoia and Kings Canyon National Parks.  He works primarily on projects related to soundscapes and forests, including giant sequoias.
+Welcome to my personal webpage!  I'm a cartographer and data manager for Sequoia and Kings Canyon National Parks.  My work is primarily focused on projects related to soundscapes and forests, including giant sequoias.  Prior to joining the National Park Service, I studied the effects of landuse change using GIS and remote-sensing as a student at the University of Michigan.
