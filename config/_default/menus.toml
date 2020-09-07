@@ -9,13 +9,13 @@
   weight = 10
 
 [[main]]
-  name = "Posts"
-  url = "/posts"
+  name = "Portfolio"
+  url = "/portfolio"
   weight = 20
 
 [[main]]
-  name = "Projects"
-  url = "/projects"
+  name = "Side Projects"
+  url = "/posts"
   weight = 30
 
 [[main]]
