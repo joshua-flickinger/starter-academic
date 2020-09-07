@@ -28,7 +28,7 @@ image:
 #    icon: globe-americas
 
 url_code: ""
-url_pdf: ""
+url_pdf: "/backcountry-map.pdf"
 url_slides: ""
 url_video: ""
 
