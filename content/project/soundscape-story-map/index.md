@@ -1,12 +1,12 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Soundscape Dashboard"
-summary: "This dashboard shows the sound 'library' of Sequoia and Kings Canyon National Parks"
+title: "Soundscape Story Map"
+summary: "This story map highlights sights and sounds of the Sierra Nevada along the elevation gradient of two well known national parks."
 authors: [Joshua Flickinger]
-tags: [nps, soundscape, ESRI, ArcGIS Online, dashboard]
-categories: [dashboard]
-date: 2020-05-30T09:20:53-07:00
+tags: [nps, ESRI, ArcGIS Online, story map]
+categories: [story map]
+date: 2020-05-25T21:53:05-07:00
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
@@ -15,7 +15,7 @@ external_link: ""
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: "[Click here to visit the dashboard.](https://nps.maps.arcgis.com/apps/opsdashboard/index.html#/c949424576814662a7af816932376313)"
+  caption: "[Click here to visit the story map](https://nps.maps.arcgis.com/apps/Cascade/index.html?appid=9f33fa32af394a129b0b548429dced01)."
   focal_point: ""
   preview_only: false
 
@@ -23,7 +23,7 @@ image:
 #   Uncomment and edit lines below to show custom links.
 links:
   - name: See Live
-    url: https://nps.maps.arcgis.com/apps/opsdashboard/index.html#/c949424576814662a7af816932376313
+    url: https://nps.maps.arcgis.com/apps/Cascade/index.html?appid=9f33fa32af394a129b0b548429dced01
     icon_pack: fas
     icon: globe-americas
 
@@ -40,10 +40,10 @@ url_video: ""
 slides: ""
 ---
 
-The Sequoia and Kings Canyon National Parks sound library houses a record of the biodiversity found in the southern Sierra Nevada.  Scientists, rangers, and story tellers have recorded sounds throughout the parks for a variety of projects.
+Sequoia and Kings Canyon National Parks monitor soundscapes to better understand biodiversity.  But the sounds aren't just used for science.  Many visitors to national parks rank the calming effects of natural soundscapes as one of their favorite aspects of visiting the parks.  So in order to share park sounds with a wider audience, I built an ESRI story map highlighting sounds of the parks.
 
-I created an [ESRI 'dashboard'](https://www.esri.com/en-us/arcgis/products/arcgis-dashboards/overview) to represent these sounds spatially and make them more widely available to virtual park visitors.  The dashboard is configured to present the sounds in an alphabetical list and filter sounds according to desired parameters, including elevation, ecoregion, type of sound, time of day, and media type.
+The story map takes virtual visitors on the Middle Fork trail of Sequoia National Park, which spans a nearly 8,000 ft elevation gradient.  Hypothetically, any sound you can hear in the park can be heard from this trail.  Select sounds from each ecoregion along the trail give viewers an idea of the types of sounds they would encounter.
 
-Under the hood, this web mapping application is powered by an ArcGIS Online feature service that stores sound locations and associated attributes.  Audio clips are embedded in the feature service pop-ups via a link to their hosted location on Soundcloud.  Icons for each location were designed using the SVG editor Inkscape.
+The story map is built using the ESRI [Cascade story map template](https://storymaps-classic.arcgis.com/en/app-list/cascade/).
 
-You can visit the dashboard [here](https://nps.maps.arcgis.com/apps/opsdashboard/index.html#/c949424576814662a7af816932376313).
+Visit the [story map](https://nps.maps.arcgis.com/apps/Cascade/index.html?appid=9f33fa32af394a129b0b548429dced01).
