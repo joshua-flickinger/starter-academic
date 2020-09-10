@@ -1,4 +1,13 @@
+---
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
+title: "Creating a GIF from GOES Imagery"
+summary: "This noteboook creates a GIF from GOES Imagery."
+authors: [Joshua Flickinger]
+tags: [Python, Jupyter Notebook, fire, smoke, weather]
+categories: [Jupyter Notebook]
+date: 2020-09-10T07:50:04-07:00
+---
 # Creating a GIF from a day of GOES Imagery
 
 GOES is a geostationary satellite operated by NOAA to monitor atmospheric conditions.  It produces a new set of imagery every 5 minutes for the entire United States!  NOAA hosts the static images for several days, so we can use these files to create little videos of the daily weather.
