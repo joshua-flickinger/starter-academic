@@ -7,8 +7,8 @@ summary: "This web map, built in ArcGIS Experience Builder, allows users to navi
 authors: [Joshua Flickinger]
 tags: [ArcGIS, ArcGIS Online, Experience Builder, small towns, America, web map]
 categories: [web map]
-date: 2020-09-12T21:55:50-07:00
-lastmod: 2020-09-12T21:55:50-07:00
+date: 2020-09-12T22:55:50-07:00
+lastmod: 2020-09-12T22:55:50-07:00
 featured: false
 draft: false
 
