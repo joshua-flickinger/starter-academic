@@ -57,13 +57,14 @@ The year component will be straightforward, so next we need to calculate the day
 ```python
 import datetime
 
-day_of_year = datetime.datetime(2020,9,10).timetuple().tm_yday
+day_of_year = datetime.datetime(2020,9,13).timetuple().tm_yday
+day_of_year
 ```
 
 
 
 
-    254
+    257
 
 
 
@@ -81,12 +82,10 @@ date_list = [start + datetime.timedelta(minutes=5*x) for x in range(0, 120)]
 
 # Convert the list of date-times to a list of strings
 datetext=[x.strftime('%H%M') for x in date_list]
-
-# View the list
-datetext
 ```
 
 For each time in the list, you can plug the time from the list into the web URL filename pattern, and use `urllib` to actually download the item.  Some of the timestamps are missing images, so it's important to build in an exception for 404 errors.
+
 
 ```python
 import urllib.request, urllib.error
@@ -108,39 +107,7 @@ Since the pattern for the file names changes at midnight, we have to create a se
 start = datetime.datetime(2020, 9, 9, 0, 1)
 date_list = [start + datetime.timedelta(minutes=5*x) for x in range(0, 25)]
 datetext=[x.strftime('%H%M') for x in date_list]
-datetext
 ```
-
-
-
-
-    ['0001',
-     '0006',
-     '0011',
-     '0016',
-     '0021',
-     '0026',
-     '0031',
-     '0036',
-     '0041',
-     '0046',
-     '0051',
-     '0056',
-     '0101',
-     '0106',
-     '0111',
-     '0116',
-     '0121',
-     '0126',
-     '0131',
-     '0136',
-     '0141',
-     '0146',
-     '0151',
-     '0156',
-     '0201']
-
-
 
 
 ```python
@@ -155,73 +122,31 @@ for num in datetext:
         print('HTTPError: {}'.format(e.code))
 ```
 
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540001_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540006_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540011_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540016_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540021_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540026_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540031_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540036_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540041_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540046_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540051_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540056_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540101_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540106_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540111_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540116_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540121_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540126_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540131_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540136_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540141_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540146_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540151_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540156_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/psw/GEOCOLOR/20202540201_GOES17-ABI-psw-GEOCOLOR-2400x2400.jpg
-    
 
 # Creating a GIF from the Images
 
-In order to turn the downloaded images into a GIF, the `imageio` package can be used.  This package appends every file from a list to a GIF or video output.  First, the directory where you saved the images above should be specified.
+In order to turn the downloaded images into a GIF, the `imageio` package can be used.  This package appends every file from a list to a GIF or video output.
 
->Note: It's recommended that you move the image files to a new folder, so you aren't accidentally creating a GIF with the unintended images.
-
-
-```python
-pathname = r"C:\Path\To\GOES\Images\Folder"
-```
-
-Use the pathname as an input for the `listdir()` method from the `os` package to create a list of filenames.
+In order to make a list of image files, we can use the `listdir()` method from the `os` package to create a list of filenames.  Without specifying a path name, the `listdir()` method will look in the same folder where the jupyter notebook is saved (and where all the images have downloaded).  However, since the extension of the downloaded images are all jpg, we can use a modifier to only search for these files.
 
 
 ```python
 import os
 
-filenames = os.listdir(path=pathname)
+filenames = []
+for file in os.listdir():
+    if file.endswith(".jpg"):
+        filenames.append(file)
 ```
 
-Concatenate the pathname with the filename in a new list.  This can be accomplished with a for loop and the `.append()` method.
-
-
-```python
-newnames = []
-for filename in filenames:
-    fullpath = pathname + "\\" + filename
-    newnames.append(fullpath)
-newnames
-```
-
-
-Finally use the `imageio` package to create a gif from your list of filenames.
+Finally use the `imageio` package to create a gif from the list of filenames.
 
 
 ```python
 import imageio
 
 images = []
-for filename in newnames:
+for filename in filenames:
     images.append(imageio.imread(filename))
-imageio.mimsave(pathname + "\\video.gif", images)
+imageio.mimsave("video.gif", images)
 ```
